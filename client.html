@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+	<title>Phacil-ePharm</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="logout">
+		<li><p class="text-right"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#logout" id="log">Logout</button></p></li>
+	</div>
+	<div class="jumbotron text-center">
+		<h1>Phacil-e-Pharm</h1>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3>current scripts</h3>
+				<ul>
+					<li><a href="#" title="drug one" data-toggle="popover" data-trigger="hover" data-content="42 mg drug one info">drug one</a></li>
+					<li><a href="#" title="drug two" data-toggle="popover" data-trigger="hover" data-content="42 mg drug two info">drug two</a></li>
+					<li><a href="#" title="drug three" data-toggle="popover" data-trigger="hover" data-content="42 mg drug three info">drug three</a></li>
+					<li><p class="text-right"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#payModal" id="add">$</button></p></li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<h3>trusted pharmacies</h3>
+				<ul>
+					<li><a href="#" title="pharm one" data-toggle="popover" data-trigger="hover" data-content="pharm one info">pharmacy one</a></li>
+					<li><a href="#" title="pharm two" data-toggle="popover" data-trigger="hover" data-content="pharm two info">pharmacy two</a></li>
+					<li><a href="#" title="pharm three" data-toggle="popover" data-trigger="hover" data-content="pharm three info">pharmacy three</a></li>
+					<li><p class="text-right"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" id="add">+</button></p></li>
+				</ul>
+			  <div class="modal fade" id="myModal" role="dialog">
+			    <div class="modal-dialog">
+
+			      <!-- Modal content-->
+			      <div class="modal-content">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			          <h4 class="modal-title"><input type="text" placeholder="Enter search term here"></h4>
+			        </div>
+			        <div class="modal-body">
+			          <p>Search results</p>
+			        </div>
+			        <div class="modal-footer">
+			          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        </div>
+			      </div>
+
+			    </div>
+			  </div>
+			  <div class="modal fade" id="payModal" role="dialog">
+			    <div class="modal-dialog">
+
+			      <!-- Modal content-->
+			      <div class="modal-content">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			          <h4 class="modal-title">Billing info</h4>
+			        </div>
+			        <div class="modal-body">
+			          <p>CC Number: <input type="text" placeholder="0000 0000 0000 0000"></p>
+					  <p>Exp:      <input type="text"placeholder="00/00"></p>
+			        </div>
+			        <div class="modal-footer">
+			          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        </div>
+			      </div>
+
+			    </div>
+			  </div>
+			  <div class="modal fade" id="logout" role="dialog">
+				<div class="modal-dialog">
+
+				  <!-- Modal content-->
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal">&times;</button>
+					  <h4 class="modal-title">Log out</h4>
+					</div>
+					<div class="modal-body">
+					  <p>Are you sure you want to log out?</p>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-success" data-dismiss="modal">Yes</button>
+					  <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+					</div>
+				  </div>
+
+				</div>
+			  </div>
+			</div>
+			<div class="col-sm-4">
+				<h3>current doctors</h3>
+				<ul>
+					<li><a href="#" title="Dr. One" data-toggle="popover" data-trigger="hover" data-content="Dr. One info">Dr. One</a></li>
+					<li><a href="#" title="Dr. Two" data-toggle="popover" data-trigger="hover" data-content="Dr. Two info">Dr. Two</a></li>
+					<li><a href="#" title="Dr. Three" data-toggle="popover" data-trigger="hover" data-content="Dr. Three info">Dr. Three</a></li>
+					<li><p class="text-right"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" id="add">+</button></p></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>ready for pick-up</h3>
+				<ul>
+					<li><a href="#" title="prescription one" data-toggle="popover" data-trigger="hover" data-content="prescription one info">prescription one</a></li>
+					<li><a href="#" title="prescription two" data-toggle="popover" data-trigger="hover" data-content="prescription two info">prescription two</a></li>
+					<li><a href="#" title="prescription three" data-toggle="popover" data-trigger="hover" data-content="prescription three info">prescription three</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+				<h3 id="copyright">Copyright &copy; Crunch Armada</h3>
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+    		$('[data-toggle="popover"]').popover();
+		});
+		</script>
+</body>
+</html>

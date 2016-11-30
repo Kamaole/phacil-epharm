@@ -1,0 +1,48 @@
+body {
+	font-family: "Futura";
+	list-style-type: none;
+}
+
+h3 {
+	background-color: #3D87FF;
+	color: white;
+	padding: 10px;
+	margin-bottom: 0px;
+}
+
+.popover-title{
+	background: #B16EE5;
+	font-family: "Futura";
+}
+
+ul {
+	list-style-type: none;
+	margin-top: 0px;
+	background-color: #EEEEEE;
+	padding: 10px;
+}
+
+.popover{
+	font-family: "Futura";
+}
+
+.logout {
+	background-color: #EEEEEE;
+	margin-bottom: 0px;
+}
+
+.jumbotron{
+	margin-top: 0px;
+}
+
+#copyright {
+	text-align: center;
+}
+
+#add {
+	text-align: right;
+}
+
+#log {
+	margin: 10px;
+}
