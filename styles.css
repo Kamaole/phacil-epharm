@@ -23,7 +23,7 @@ ul {
 }
 
 p {
-	margin-top: 0px;
+	margin-top: 10px;
 	background-color: #EEEEEE;
 	padding: 10px;
 }
@@ -40,6 +40,8 @@ p {
 
 #copyright {
 	text-align: center;
+	margin: 5px;
+	margin-top: 20px;
 }
 
 #add {
