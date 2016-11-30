@@ -56,3 +56,9 @@ p {
 	display: inline-block;
 	background-color: white;
 }
+
+#pic {
+	margin: 10px;
+	width: 128px;
+	height: 128px;
+}
